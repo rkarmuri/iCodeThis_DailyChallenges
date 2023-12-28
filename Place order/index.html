@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placing Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="close-button" onclick="closeBox()">x</div>
+    <div class="container">
+        <div class="contact">
+            <h3>Contact info</h3>
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="text" id="email" placeholder="Enter email" required>
+            </div>
+        </div>
+        <div class="shipping">
+            <h3>Shipping info</h3>
+            <div class="form-group">
+                <label for="name" class="required">Name</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="country" class="required">Country/Region</label>
+                <input type="text" id="country" placeholder="Enter country" required>
+            </div>
+            <div class="form-group">
+                <label for="address" class="required">Address</label>
+                <input type="text" id="address" placeholder="Enter address" required>
+            </div>
+        </div>
+        <div class="payment">
+            <h3>Payment info</h3>
+            <div class="payment-type">
+            <div class="payment-card">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/card.PNG" alt="">
+                <small>Card</small>
+            </div>
+            <div class="payment-cash">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/cash.PNG" alt="">
+                <small>Cash at arrival</small>
+            </div>
+            <div class="payment-paypal">
+                <img src="https://raw.githubusercontent.com/leetebbs/storage/main/paypal.PNG" alt="">
+                <small>Paypal</small>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="card" class="required">Card Number</label>
+                <input type="text" id="card" placeholder="Enter card number" required>
+            </div>
+            <div class="form-group-pay">
+                <label for="expiry" class="required">Expiry date</label>
+                <input type="month" id="expiry" placeholder="MM/YY" required min="2023-01">
+                <label for="cvc" class="required">CVC</label>
+                <input type="text" id="cvc" placeholder="123" required>
+            </div>
+            <button class="btn-rounded-full">Place order</button>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

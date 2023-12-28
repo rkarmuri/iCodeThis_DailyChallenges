@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(63 94 102 / var(--tw-bg-opacity));
+}
+
+.box{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-button{
+    position:absolute;
+    cursor: pointer;
+    font-size: 20px;
+    top: 40px;
+    right: 40px;
+
+}
+.container{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+
+.required::after{
+    content: "*";
+    color: red;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    width: 90%;
+    box-shadow: 0 0 5px #d7cdcd;
+    padding: 5px;
+}
+
+.form-group-pay {
+    display:inline;
+    gap: 5px;
+}
+
+.form-group-pay input {
+    width: 35%;
+    box-shadow: 0 0 5px #cccccc;
+}
+
+.payment-type{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.payment-type > div {
+    flex: 1;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px;
+    position:relative;
+    margin: 10px 10px 5px 0px;
+    max-width: 800px;
+    transition: border-color 0.3s ease; 
+}
+
+.payment-type > div:hover {
+    border-color: rgb(55, 129, 167);
+}
+
+.btn-rounded-full{
+    --tw-bg-opactity: 1;
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(27 114 147 / var(--tw-bg-opacity));
+}
