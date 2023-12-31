@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: #e4eff7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    width: 90vh;
+    height: 60vh;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.intro-card {
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.intro-card h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.intro-card p {
+    margin: auto 100px;
+}
+
+/* 2nd section */
+
+.card-section {
+    display: flex;
+    gap: 15px;
+    margin-left: 80px;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 10px;
+}
+
+.card-container {
+    background: #e4eff7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card {
+    width: 120px;
+    background: #fff;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.card p {
+    font-size: 10px;
+    margin: auto 5px;
+}
+
+.opt-btn {
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown-content .option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content .option:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content .option p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.plus-btn {
+    cursor: pointer;
+    background: #fff;
+    color: #c9e2f4;
+    width: 50px;
+    height: 50px;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 216, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.btn-span {
+    margin-top: -8px;
+    border-radius: 5px;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+}
