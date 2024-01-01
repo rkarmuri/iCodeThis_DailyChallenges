@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #a20062;
+    --font-fix: 11px;
+}
+* body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    background: linear-gradient(to right, #fff, #ffeeef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 10px solid #f7f4fa;
+}
+
+.empty-card {
+    background:#f8eaed;
+    width: 80vh;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.invite-card {
+    background: #fff;
+    width: 50vh;
+    height: 70vh;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid var(--secondary-color);
+}
+
+.img-container p{
+    font-size: var(--font-fix);
+}
+
+.channel-name h2 {
+    font-size: 1rem;
+}
+
+.channel-name p {
+    background: #f7f4fa;
+    font-size: var(--font-fix);
+    margin: 10px 80px;
+    padding: 10px;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 60px;
+    align-items: flex-start;
+}
+
+.label-container label {
+    font-size: 11px;
+}
+
+.label-container input[type='text'] {
+    padding: 15px;
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin: 20px 60px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox input[type='checkbox'] {
+    transform: scale(1.4);
+}
+
+.checkbox span {
+    font-size: 14px;
+}
+
+.final-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.final-section input[type="button"] {
+    padding: 15px;
+    margin: auto 60px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.final-section a {
+    font-size: var(--font-fix);
+    margin: 40px auto;
+}
+
+
+@media(min-height: 600px) {
+    img {
+            width: 50px;
+            height: 50px;
+        }
+    .channel-name h2 {
+        font-size: 14px;
+    }
+
+    .channel-name p {
+        margin: 10px 60px;
+        padding: 6px;
+    }
+    .label-container {
+    gap: 6px;
+    }
+    .label-container input[type='text'] {
+        padding: 8px;
+    }
+    .checkbox {
+        margin: auto 60px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .checkbox input[type='checkbox'] {
+        transform: scale(1);
+    }
+
+    .checkbox span {
+        font-size: 11px;
+    }
+    .final-section input[type="button"] {
+        padding: 8px;
+        margin: 5px 60px;
+    }
+
+    .final-section a {
+        margin: 10px auto;
+    }
+}
+
