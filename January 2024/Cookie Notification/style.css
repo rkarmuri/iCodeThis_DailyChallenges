@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #ecedf6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,25%);
+    gap: 80px;
+}
+
+.header-box {
+    width: 100vh;
+    height: 10vh;
+    color: #fff;
+    font-size: small;
+    background: #6f88dd;
+    border-radius: 40px;
+}
+
+.header-box p {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.header-box a {
+    color: #fff;
+}
+
+.header-close{
+    font-size: large;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 30vh;
+    background: #5c78d7;
+    color: #fff;
+}
+
+.cookie-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 370px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.cookie-close {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 36vh;
+}
+
+.cookie-head {
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 50%;
+    background: #fff2eb;
+    color: #cf6f45;
+    font-size: 50px;
+}
+
+.cookie-text p{
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+}
+
+.cookie-text p a {
+    color: #000;
+}
+
+.buttons {
+    margin-top: 10px;
+    padding: 0px 40px;
+    gap: 10px;
+}
+
+.accept,
+.decline {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #3053c9;
+}
+
+.settings {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.settings a {
+    color: #000;
+}
+
+@media (min-width:500px) {
+    .header-close {
+        margin-left: 25vh;
+    }
+}
