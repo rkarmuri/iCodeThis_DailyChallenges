@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chart">
+            <svg class="circle" viewBox="0 0 260 260" 
+            width="120" height="120" fill="none" stroke-width="20">
+                <path class="background" stroke="#0002" d="M130 10a120 120 0 1 1 0 240 120 120 0 0 1 0-240" />
+                <path class="value" stroke="#000" stroke-dasharray="188.5 754.09"
+                d="M130 10a120 120 0 1 1 0 240 120 120 0 0 1 0-240"
+                ></path>
+            </svg>
+            <div>
+                <span>25%</span>
+                Content progress
+            </div>
+        </div>
+            <h1>Curriculum</h1>
+            <input type="radio" name="chapter" id="chapter-1" value="1" checked="">
+            <label for="chapter-1">
+                <div>
+                    <strong>Chapter 1</strong>
+                    <span>Introduction</span>
+                </div>
+            </label>
+            <input type="radio" name="chapter" id="chapter-2" value="2">
+            <label for="chapter-2">
+                <div>
+                    <strong>Chapter 2</strong>
+                    <span>Information architecture</span>
+                </div>
+            </label>
+            <input type="radio" name="chapter" id="chapter-3" value="3">
+            <label for="chapter-3">
+                <div>
+                    <strong>Chapter 3</strong>
+                    <span>Data and Security</span>
+                </div>
+            </label>
+        </div>
+    </div>
+</body>
+</html>

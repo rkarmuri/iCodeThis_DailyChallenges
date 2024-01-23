@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+:root {
+    --bg-color1: #e5d8f1;
+    --bg-color2: #dfdef2;
+    --text-color1: #c54589;
+    --text-color2: #4c2eba;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html,
+body {
+    font-family: 'IBM Plex Sans',sans-serif;
+    min-block-size: 100vh;
+    background: linear-gradient(to right, #f8effb, #d8dded);
+}
+
+.bg1 {
+    background: var(--bg-color2);
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.bg2 {
+    background: var(--bg-color1);
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    gap: 40px;
+    place-content: center;
+    padding: 10rem;
+}
+
+.content1,.content2 {
+    display: grid;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 50vh;
+}
+
+.content1 .header h3 {
+    color: var(--text-color2);
+    font-weight: 800;
+}
+
+.content2 .header h3 {
+    color: var(--text-color1);
+    font-weight: 800;
+}
+
+.header h4 span {
+    font-weight: 100;
+}
+
+.content-list li {
+    display: flex;
+    font-size: 0.75rem;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.content-list {
+    list-style-type: none;
+}
+
+.fas {
+    border: 5px solid #f4fcee;
+    color: green;
+    font-size: 0.8rem;
+    border-radius: 50%;
+}
+
+.btn-common {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-starter {
+    color: var(--text-color2);
+    background: #fff;
+    border: 1px solid var(--text-color2);
+}
+
+.btn-professional {
+    background: var(--text-color1);
+    color: #fff;
+    border: none;
+}
+
+.empty1 {
+    background: var(--bg-color2);
+    width: 300px;
+    height: 250px;
+    margin-top: -100px;
+    position: absolute;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.empty2 {
+    background: var(--bg-color1);
+    width: 300px;
+    height: 250px;
+    position:absolute;
+    transform: translate(70%,80%);
+    border-radius: 15px;
+    opacity: 1;
+}

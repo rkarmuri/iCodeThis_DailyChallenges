@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --color1: #2d43ec;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display: grid;
+    background: #e9ecf8;
+    place-content: center;
+    padding: 5rem;
+}
+
+.container {
+    background: #fff;
+    display: grid;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 420px;
+    box-shadow: 10px 20px 30px #ccc;
+}
+
+.header h2 {
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.header strong {
+    text-transform: uppercase;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.header p {
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 5px 100px;
+    font-weight: 600;
+}
+
+.selection {
+    padding: 1rem 2.4rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px 5px;
+}
+
+ul li:first-child {
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    border: 5px solid #e9ecf8;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+input[type="radio"]:checked {
+    background-color: #000;
+}
+
+input[type="radio"]:checked::before {
+    content: '\2713'; 
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-details {
+    margin-left: 1.5rem;
+    text-align: left;
+}
+
+.list-details h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.list-details h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.list-details p {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.best-value {
+    padding: 5px 10px;
+    background: var(--color1);
+    border: none;
+    color: #fff;
+    margin-bottom: 2px;
+    border-radius: 20px;
+}
+
+img {
+    width: 60px;
+    height: 14px;
+    margin-left: 2px;
+}
+
+.end-btns {
+    display: grid;
+    gap: 10px;
+    padding: 1rem;
+    place-content: center;
+}
+
+.continue {
+    padding: 15px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+}
+
+.paypal {
+    grid-area: 2;
+    background: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    align-items: center;
+    border: 2px solid #e9ecf8;
+    border-radius: 25px;
+}
+
+.last-link {
+    padding: 1rem;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+
+

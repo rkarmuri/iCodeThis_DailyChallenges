@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #f4f7ff;
+    place-content: center;
+    display: grid;
+    min-height: 100vh;
+}
+
+.outer-box {
+    background: linear-gradient(to right,#eae8fd, #e8f1ff);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.content{
+    padding: 2rem;
+    background: #fff;
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    border-radius: 15px;
+    max-inline-size: 100%;
+    margin-bottom: -60px;
+}
+
+.head p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.buy {
+    text-transform: uppercase;
+    background: linear-gradient(to right,#5ff48b,#76f5ee);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.head2 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.head2 span {
+    font-weight: 100;
+}
+
+ul li {
+    list-style: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+ul li .fas {
+    background: #eaeeff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #000;
+}
+
+.box {
+    background-color: #f2f5ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+}
+
+.box p {
+    grid-area: 1/span 2;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.box .search-container {
+    grid-area: 2;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-container p {
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+.search-container .fas {
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.check {
+    grid-area: 2;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pick {
+    text-transform: uppercase;
+    background: linear-gradient(to right,#9bc3fe,#b4abfd);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}

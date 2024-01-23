@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #e84e28;
+    --stars-color: #ffef75;
+    --other-color: #a13013;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to left, #d5f2e4, #eff2ef);
+    place-content: center;
+    min-block-size: 100vh;
+    display: grid;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    color: #fff;
+    overflow: hidden;
+    background: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px rgba(242, 143, 119, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--other-color);
+    padding: 1rem;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+.fa-bars,.fa-magnifying-glass {
+    cursor: pointer;
+}
+
+.fa-bars:hover, .fa-magnifying-glass:hover {
+    color:#ccc;
+}
+
+.restaurant-item {
+    display: flex;
+    padding: 10px 15px;
+    position: relative;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    border: 0.5px solid var(--other-color);
+    justify-content: space-between;
+}
+
+.restuarants-list {
+    max-height: 25rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 0;
+}
+
+.restaurant-details {
+    display: grid;
+}
+
+.properties {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 8px;
+    margin-top: 2px;
+}
+
+.properties li {
+    border: 0.5px solid #fff;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.star-rating {
+    font-size: 0.6rem;
+}
+
+.checked {
+    color: var(--stars-color)
+}
+
+.distance {
+    display: grid;
+    margin-left: 20px;
+}
+
+.distance i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.distance span {
+    font-size: 0.8rem;
+}
+
+.order-info {
+    display: flex;
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    width: 10rem;
+    height: 100%;
+    gap: 10px;
+    color: #000;
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: space-around;
+    transition: left 0.3s ease;
+    transform: translateX(220%);
+}
+
+.restaurant-item:hover .order-info {
+    transform: translateX(80%); 
+}
+
+.restaurant-item:hover .img-container {
+    transform: translateX(-200%);
+}
+
+.restaurant-item:hover .restaurant-details {
+    transform: translateX(-80%);
+}
+
+.restaurant-item:hover .distance {
+    transform: translateX(-310%);
+}
+
+.order-info,.img-container,.restaurant-details,.distance {
+    transition: transform 0.3s ease;
+}
+
+.fa-phone-flip {
+    cursor: pointer;
+    color: #24ce2c;
+    font-size: 1rem;
+}
+
+.fa-bookmark {
+    cursor: pointer;
+    color: #308bd6;
+    font-size: 1rem;
+}
+
+.order-info p {
+    margin-left: -10px;
+}
